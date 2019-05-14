@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Mozilla IAM Checker",
+  "version": "0.1",
+
+  "description": "Verifies that you are on a site trusted by Mozilla IAM",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": "imgs/unknown.png",
+    "default_title": "This site's Mozilla IAM status is: UNKNOWN",
+    "hide_matches": ["*://*/*"]
+  },
+
+  "permissions": ["webNavigation", "tabs"]
+}
