@@ -48,7 +48,7 @@ function markAsTrusted(tabId) {
     tabId,
   });
   browser.pageAction.setTitle({
-    title: "It is SAFE to use your mozilla credentials on this site",
+    title: "It is SAFE to use your Mozilla credentials on this site",
     tabId,
   })
   browser.pageAction.show(tabId);
