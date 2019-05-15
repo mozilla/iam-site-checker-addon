@@ -1,9 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Mozilla IAM Site Checker",
+  "name": "Mozilla IAM Site tChecker",
   "version": "0.1",
-
   "description": "Verifies that you are on a site that is safe to enter your Mozilla credentials on",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "iam-site-checker@mozilla.org"
+    }
+  },
 
   "background": {
     "scripts": ["background.js"]
